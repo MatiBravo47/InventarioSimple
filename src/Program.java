@@ -5,10 +5,11 @@ public class Program {
         Scanner scn = new Scanner(System.in);
         
         Producto p1 = new Producto();
-        p1.setNombre(scn.nextLine()); //No es buena practica
-        p1.setNombre("Coca cola 1.5Lt");
-        p1.setPrecio(3000);
-        p1.setCodigoDeBarra(1267492615);
+        
+        //p1.setNombre(scn.nextLine()); //No es buena practica
+        //p1.setNombre("Coca cola 1.5Lt"); 
+        //p1.setPrecio(3000);
+        //p1.setCodigoDeBarra(1267492615);
         
         System.out.println("Ingrese el nombre del producto");
         String nombre = scn.nextLine();
@@ -31,9 +32,10 @@ public class Program {
         
         System.out.println("Datos del producto");
         System.out.println("Nombre: " + p1.getNombre());
-        System.out.println("Precio; " + p1.getPrecio());
-        System.out.println("Marca" + p1.getMarca());
-        System.out.println("Codigo de barras" + p1.getCodigoDeBarra());
+        System.out.println("Precio: " + p1.getPrecio());
+        System.out.println("Marca: " + p1.getMarca());
+        System.out.println("Codigo de barras: " + p1.getCodigoDeBarra());
+        scn.nextLine();
                         
     }
     
